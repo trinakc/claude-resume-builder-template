@@ -1,0 +1,76 @@
+ALEX RIVERA — INTERVIEW STORY BANK  [EXAMPLE — REPLACE WITH YOUR OWN]
+======================================================================
+SOAR-format stories built up across interview prep sessions. Never trimmed —
+only added to. When generating JD-tailored questions, match against these
+stories rather than inventing new ones; if no story fits a likely question,
+flag the gap honestly rather than stretching one.
+
+>>> HOW TO USE THIS FILE <<<
+The three stories below are fictional examples showing the expected format.
+Delete them and add your own after each interview or prep session. What
+matters structurally:
+  - One story per block, with a descriptive STORY: title
+  - A "Competencies:" line so tailoring can match stories to questions
+  - SOAR body: Situation, Obstacle, Action, Result
+  - Optional tagged variants where you have told the same story two ways
+  - A flagged discrepancy note when two versions genuinely conflict, so the
+    conflict gets resolved rather than silently picked from
+
+===================================================================
+STORY: Replatforming without stopping delivery
+===================================================================
+Competencies: Delivery leadership, technical judgement, stakeholder management
+
+Situation: The team owned a service running on infrastructure the company
+was retiring, with a hard cutoff date twelve months out.
+Obstacle: Product had a committed roadmap for the same period, so there was
+no window to pause feature work for the migration.
+Action: Split the migration into increments that could ship behind a flag
+alongside feature work, and agreed with product that roughly one third of
+each sprint was ring-fenced for migration.
+Result: Cutover completed a month ahead of the deadline with no unplanned
+downtime, and the roadmap slipped by weeks rather than being abandoned.
+
+===================================================================
+STORY: Holding a release
+===================================================================
+Competencies: Quality ownership, decision making under pressure
+
+Situation: A monthly release was ready on the scheduled date, but a defect
+surfaced in a payment edge case the day before.
+Obstacle: The date had been communicated to customers, and the defect was
+low frequency, so there was real pressure to ship and patch later.
+Action: Quantified the exposure (how many accounts could hit it, what the
+failure did), presented that rather than an opinion, and recommended a
+two-day hold.
+Result: The hold was agreed, the fix shipped with the release, and the
+exposure figures became a standard part of subsequent go/no-go calls.
+
+[Variant — told with a people emphasis]
+Same event, framed around the conversation with the product lead who wanted
+to ship, and how disagreement got resolved with data instead of seniority.
+Use this variant when the question is about influencing or conflict rather
+than about quality gates.
+
+===================================================================
+STORY: Coaching an engineer through a difficult first year
+===================================================================
+Competencies: Mentoring, people development, feedback
+
+Situation: A junior engineer joined the team and was strong technically but
+consistently over-committed and missed sprint goals.
+Obstacle: Direct feedback had already been given by a previous lead and had
+not changed the pattern, and confidence was visibly dropping.
+Action: Moved from feedback to structured practice, sizing work together in
+1:1s before sprint planning for six weeks, then handing the estimate back.
+Result: Commitments became reliable within a quarter, and the engineer went
+on to own a service independently.
+
+===================================================================
+EXAMPLE OF A FLAGGED DISCREPANCY (delete with the rest)
+===================================================================
+⚠ FLAGGED — two conflicting versions of the same event
+If one telling of a story says a team was six people and another says nine,
+record both versions here with this flag rather than picking one. Interview
+prep should surface the conflict so it gets checked, since a detail that
+shifts between tellings is exactly what a second interviewer notices.

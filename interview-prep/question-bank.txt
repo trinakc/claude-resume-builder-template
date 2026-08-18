@@ -1,0 +1,52 @@
+INTERVIEW QUESTION BANK  [EXAMPLE — REPLACE WITH YOUR OWN]
+===========================================================
+Question patterns encountered across past interviews, organized by
+category. This is a reference of QUESTION TYPES, not answers — pair with
+story-bank.txt when prepping for a specific role. Used to seed JD-tailored
+question generation: match likely questions against this bank first, only
+generate genuinely new ones where the JD covers ground this bank doesn't.
+
+>>> HOW TO USE THIS FILE <<<
+The categories below are a generic starting set. Add real questions verbatim
+after each interview, under the closest category, or start a new category
+when none fits. Parenthetical notes after a question record what the
+interviewer was actually probing for, which is often more useful than the
+question wording itself.
+
+PEOPLE LEADERSHIP & COACHING
+-------------------------------
+- "How do you approach coaching someone whose technical background is very
+  different from your own?"
+- "Tell me about a time you had to give difficult feedback." (does the
+  answer include what changed afterwards?)
+- "How do you keep a distributed team cohesive across time zones?"
+
+DELIVERY & PRIORITISATION
+----------------------------
+- "Tell me about a time you had to choose between scope, date, and quality."
+- "How do you handle a commitment the team is clearly going to miss?"
+- "What does your first 90 days look like in this role?"
+
+TECHNICAL DEPTH
+------------------
+- "Walk me through a complex technical project you delivered."
+- "What is a technical decision you got wrong, and what did you do about it?"
+- "How hands-on are you now, and how hands-on do you want to be?"
+
+QUALITY, RISK & INCIDENTS
+----------------------------
+- "How do you decide whether something is ready to release?"
+- "Tell me about an incident you were involved in." (looking for the review
+  and the systemic fix, not just the fix)
+- "How do you balance test coverage against delivery speed?"
+
+STAKEHOLDERS & CONFLICT
+--------------------------
+- "Describe a disagreement with a peer and how it resolved."
+- "How do you say no to a stakeholder?"
+
+MOTIVATION & FIT
+-------------------
+- "Why this role, and why now?"
+- "What kind of environment do you do your best work in?"
+- "What questions do you have for us?" (prepare three, role-specific)

@@ -1,0 +1,22 @@
+# Personal content (transient root working files only — anchored to repo root
+# so they do NOT match the archived applications/<slug>/resume.txt etc.)
+/resume.html
+/resume.pdf
+/resume.txt
+/resume_old.txt
+/job-spec.txt
+
+# Theme temp files
+.resume_themed.html
+.cover_letter_themed.html
+
+# Generated cover letter PDFs (regenerable from the HTML)
+applications/**/cover-letter.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+*:Zone.Identifier

@@ -1,0 +1,38 @@
+[EXAMPLE JOB SPEC — for trying out the tailored build]
+
+To use it:  cp examples/job-spec.example.txt job-spec.txt  then run `claude`
+
+Paste real postings into job-spec.txt verbatim. Do not summarise them: the
+exact wording is what tailoring matches against, and the archived copy under
+applications/<slug>/job-spec.txt is what you will want back at interview time.
+
+---
+
+Engineering Manager, Developer Platform
+Northgate Labs — Remote (US / EU)
+
+About the role
+We are looking for an Engineering Manager to lead our Developer Platform
+team. The platform team's customers are our own engineers: you will own the
+build, CI/CD, and deployment tooling that every product team depends on.
+
+What you will do
+- Lead, coach, and grow a team of 5 to 8 platform engineers across time zones
+- Own the reliability of the internal deployment pipeline and the release
+  process that sits on top of it
+- Partner with product engineering leads to reduce delivery friction and
+  shorten feedback loops
+- Drive incremental migration of legacy build infrastructure without
+  disrupting product delivery
+- Set and hold quality standards, including release go/no-go decisions
+
+What we are looking for
+- Experience managing software engineers, including hiring and development
+- Hands-on background in CI/CD, build systems, or infrastructure automation
+- A track record of improving developer experience with evidence of impact
+- Comfort making judgement calls under delivery pressure
+- Clear communication with both engineers and senior stakeholders
+
+Nice to have
+- Experience with cloud cost management
+- Experience running incident review processes

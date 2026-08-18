@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Rivera, Engineering Manager</title>
+<style>
+  @import url('');
+
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #595959;
+    --accent: #2456a6;
+    --border: #d0d0d0;
+    --code-bg: #f5f5f5;
+    --bright: #0d0d0d;
+    --font: 'Georgia', 'Times New Roman', serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 9pt;
+    line-height: 1.38;
+    padding: 0.5in 0.6in;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  h1 {
+    color: var(--bright);
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  h2 {
+    color: var(--accent);
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 9pt 0 6pt;
+    padding-bottom: 3pt;
+    border-bottom: 1px solid var(--border);
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h2::before {
+    content: "> ";
+    color: var(--muted);
+  }
+
+  h3 {
+    color: var(--bright);
+    font-size: 10pt;
+    font-weight: 700;
+  }
+
+  /* Header */
+  .header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 11pt;
+  }
+
+  .title {
+    color: var(--muted);
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-top: 4pt;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4pt 10pt;
+    margin-top: 9pt;
+    font-size: 8.5pt;
+    color: var(--muted);
+  }
+
+  .contact span:not(:last-child)::after {
+    content: " ·";
+    color: var(--border);
+    margin-left: 6pt;
+  }
+
+  /* Profile */
+  .profile p {
+    color: var(--text);
+  }
+
+  /* Skills */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5pt;
+  }
+
+  .skill-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 12pt;
+    align-items: baseline;
+  }
+
+  .skill-row .cat {
+    color: var(--bright);
+    font-weight: 700;
+    font-size: 9pt;
+  }
+
+  .skill-row .items {
+    color: var(--text);
+    font-size: 9pt;
+  }
+
+  /* Highlights */
+  .highlight-block {
+    margin-bottom: 8pt;
+    padding-left: 10pt;
+    border-left: 3px solid var(--accent);
+  }
+
+  .highlight-block h3 {
+    margin-bottom: 3pt;
+  }
+
+  .highlight-block p {
+    color: var(--text);
+    font-size: 9pt;
+  }
+
+  .tags {
+    margin-top: 5pt;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5pt;
+  }
+
+  .tag {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 7.5pt;
+    padding: 1.5pt 6pt;
+    border-radius: 3px;
+  }
+
+  /* Experience */
+  .job {
+    margin-bottom: 7pt;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+    flex-wrap: wrap;
+  }
+
+  .job-header .company {
+    color: var(--muted);
+    font-size: 9pt;
+  }
+
+  .job-header .dates {
+    color: var(--muted);
+    font-size: 8.5pt;
+    white-space: nowrap;
+  }
+
+  .job ul {
+    margin: 6pt 0 0 0;
+    list-style: none;
+  }
+
+  .job li {
+    position: relative;
+    padding-left: 15pt;
+    margin-bottom: 3pt;
+    font-size: 9pt;
+    color: var(--text);
+  }
+
+  .job li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .job.compact {
+    margin-bottom: 9pt;
+  }
+
+  .job.compact p {
+    font-size: 9pt;
+    color: var(--text);
+    margin-top: 3pt;
+  }
+
+  /* Education */
+  .education-item .degree {
+    color: var(--bright);
+    font-weight: 700;
+  }
+
+  .education-item .school {
+    color: var(--muted);
+    font-size: 9pt;
+  }
+
+  /* Recognition */
+  .recognition-list {
+    list-style: none;
+  }
+
+  .recognition-list li {
+    position: relative;
+    padding-left: 15pt;
+    margin-bottom: 5pt;
+    font-size: 9pt;
+  }
+
+  .recognition-list li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 8pt;
+  }
+
+  .recognition-list .year {
+    color: var(--muted);
+  }
+
+  /* Footer (opt-in only, see CLAUDE.md) */
+  .footer {
+    margin-top: 18pt;
+    padding-top: 8pt;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 7.5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Alex Rivera</h1>
+  <div class="title">Engineering Manager &nbsp;·&nbsp; Developer Platform &nbsp;·&nbsp; Delivery</div>
+  <div class="contact">
+    <span>Portland, OR</span>
+    <span><a href="tel:+15550104477">555-010-4477</a></span>
+    <span><a href="mailto:alex.rivera@example.com">alex.rivera@example.com</a></span>
+    <span><a href="https://www.linkedin.com/in/example-alex-rivera">linkedin.com/in/example-alex-rivera</a></span>
+    <span><a href="https://github.com/example/deploy-toolkit">github.com/example/deploy-toolkit</a></span>
+  </div>
+</div>
+
+<section class="profile">
+  <h2>Profile</h2>
+  <p>An engineering manager who treats developers as the primary customer, with experience owning the build, CI/CD, and deployment tooling a multi-team engineering organisation depends on. Technically grounded and people-first in approach, comfortable leading distributed teams through migrations and architectural change while holding the regular release cadence. Known for making release decisions on evidence rather than dates, and for leaving teams able to ship with more confidence and less friction than before.</p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-row">
+      <div class="cat">Platform &amp; Tooling</div>
+      <div class="items">CI/CD Pipelines, Build Systems, Deployment Automation, Preview Environments, Internal Developer Tooling</div>
+    </div>
+    <div class="skill-row">
+      <div class="cat">Delivery</div>
+      <div class="items">Release Management, Go/No-Go Decisions, Incremental Migration, Scrum &amp; Kanban, Roadmap Trade-offs</div>
+    </div>
+    <div class="skill-row">
+      <div class="cat">Leadership</div>
+      <div class="items">Hiring &amp; Onboarding, Coaching &amp; Development Plans, Distributed Teams, Incident Review, Stakeholder Communication</div>
+    </div>
+    <div class="skill-row">
+      <div class="cat">Technical</div>
+      <div class="items">Python, Go, Bash, Terraform, Docker, AWS, PostgreSQL, Linux</div>
+    </div>
+  </div>
+</section>
+
+<section class="highlights">
+  <h2>Highlights</h2>
+  <div class="highlight-block">
+    <h3>Replatformed a core service without pausing the roadmap</h3>
+    <p>Split a twelve month infrastructure migration into flag-gated increments that shipped alongside feature work, ring-fencing roughly a third of each sprint. Cutover completed a month ahead of the retirement deadline with no unplanned downtime.</p>
+    <div class="tags">
+      <span class="tag">Migration</span>
+      <span class="tag">Delivery Planning</span>
+      <span class="tag">Stakeholder Alignment</span>
+    </div>
+  </div>
+  <div class="highlight-block">
+    <h3>Owned the deployment toolchain four product teams depend on</h3>
+    <p>Took releases from a manual checklist to a repeatable pipeline, then made the exposure data behind each go/no-go call visible so release decisions stopped being a judgement of seniority.</p>
+    <div class="tags">
+      <span class="tag">CI/CD</span>
+      <span class="tag">Release Readiness</span>
+      <span class="tag">Developer Experience</span>
+    </div>
+  </div>
+</section>
+
+<section class="experience">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-header">
+      <h3>Engineering Manager</h3>
+      <span class="dates">2022 &ndash; Present</span>
+    </div>
+    <div class="company">Northwind Systems, Portland</div>
+    <ul>
+      <li>Lead a distributed team of six engineers across two time zones, owning hiring, onboarding, and individual development plans.</li>
+      <li>Own the internal deployment toolchain adopted by four product teams, replacing a manual release checklist with a repeatable pipeline.</li>
+      <li>Run the go/no-go decision for monthly releases, weighing test results, open defects, and system health rather than deferring to the date.</li>
+      <li>Introduced a lightweight incident review format that surfaced repeat causes the team had previously been fixing one at a time.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <h3>Senior Software Engineer</h3>
+      <span class="dates">2019 &ndash; 2022</span>
+    </div>
+    <div class="company">Northwind Systems, Portland</div>
+    <ul>
+      <li>Built the CI pipeline that replaced nightly manual builds, cutting the feedback loop on a failing change from a day to under 20 minutes.</li>
+      <li>Designed and maintained the integration test suite covering the service boundary between the API and the billing system.</li>
+      <li>Mentored two junior engineers through their first year, both of whom went on to own services independently.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <h3>Software Engineer</h3>
+      <span class="dates">2016 &ndash; 2019</span>
+    </div>
+    <div class="company">Castleford Digital, Portland</div>
+    <ul>
+      <li>Delivered features across a customer-facing web application in a small team with direct product owner contact.</li>
+      <li>Took on release coordination for the team, including writing the runbook the team continued to use afterwards.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="education">
+  <h2>Education</h2>
+  <div class="education-item">
+    <div class="degree">BSc Computer Science</div>
+    <div class="school">State University</div>
+  </div>
+</section>
+
+<section class="recognition">
+  <h2>Certifications &amp; Recognition</h2>
+  <ul class="recognition-list">
+    <li>Certified Scrum Master (CSM), Scrum Alliance <span class="year">(2021)</span></li>
+    <li>AWS Certified Solutions Architect, Associate <span class="year">(2020)</span></li>
+    <li>Engineering Excellence Award, Northwind Systems <span class="year">(2023)</span></li>
+  </ul>
+</section>
+
+</body>
+</html>

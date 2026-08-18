@@ -1,0 +1,11 @@
+theme:
+  bg: "#0d1117"
+  text: "#c9d1d9"
+  muted: "#8b949e"
+  accent: "#e66386"
+  border: "#30363d"
+  code_bg: "#161b22"
+  bright: "#f0f6fc"
+  font: "'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
+  font_import: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+  padding: "0.5in 0.6in"

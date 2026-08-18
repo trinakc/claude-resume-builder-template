@@ -1,0 +1,116 @@
+ALEX RIVERA — MASTER RESUME BANK  [EXAMPLE — REPLACE WITH YOUR OWN]
+====================================================================
+This file is the full pool of experience, achievements, and framing options
+built up across every CV tailored to date. It is never trimmed — only added
+to. Tailoring pulls FROM this file; it does not edit this file.
+
+>>> HOW TO USE THIS FILE <<<
+Everything below is fictional example content, here to show the shape the
+tailoring workflow expects. Delete it and write your own. The structure that
+matters:
+  - CONTACT block at the top
+  - Headline / summary VARIANTS, so tailoring can pick by emphasis
+  - One section per role, with bullets grouped under it
+  - "Framing options" (Option A / B / C) where the same achievement can be
+    told more than one way for different audiences
+  - "situational" markers on bullets that should only appear when the job
+    spec explicitly calls for that skill or tool
+Be exhaustive and honest here. Tailored CVs can only ever select, reorder,
+and rephrase what is in this file, so anything missing here cannot appear
+on a CV.
+
+Working style note (apply when selecting/rephrasing bullets):
+Prefers honest, interview-defensible language over aspirational or
+spec-mirroring claims. Never state metrics, tools, or outcomes not evidenced
+below. Where a framing choice exists, pick the one that best matches the
+target role's emphasis rather than defaulting to the most impressive-sounding
+version.
+
+CONTACT
+-------
+Name: Alex Rivera
+Phone: 555-010-4477
+Email: alex.rivera@example.com
+LinkedIn: linkedin.com/in/example-alex-rivera
+Location: Portland, OR
+Portfolio project: github.com/example/deploy-toolkit
+
+TITLE / HEADLINE OPTIONS (pick based on target role)
+-----------------------------------------------------
+- Engineering Manager | Platform & Developer Experience
+- Engineering Manager | Delivery Lead
+- Senior Software Engineer | Platform & Infrastructure
+
+PROFESSIONAL SUMMARY — VARIANTS BY EMPHASIS
+---------------------------------------------
+[Platform / developer experience framing]
+An engineering manager who treats developers as the primary customer, with
+experience owning internal build and deployment tooling used across a
+multi-team engineering organisation. Technically grounded and people-first,
+with a track record of reducing delivery friction and giving teams the
+confidence to ship independently.
+
+[Delivery / people-leadership framing]
+An engineering manager with experience leading distributed teams through
+migrations, architectural change, and high-stakes releases. Known for
+building psychological safety, holding delivery standards under pressure,
+and owning release decisions end to end.
+
+[Individual contributor framing, for hands-on roles]
+A senior software engineer specialising in build systems, CI/CD, and
+deployment automation, comfortable working close to production and
+pragmatic about the trade-off between coverage and delivery speed.
+
+===================================================================
+ROLE: Engineering Manager — Northwind Systems (2022 – Present)
+===================================================================
+- Led a distributed team of six engineers across two time zones, running
+  hiring, onboarding, and individual development plans.
+  Framing options:
+    Option A (people emphasis): Led a distributed team of six engineers,
+      owning hiring, onboarding, and growth planning, with every engineer
+      on an agreed development plan.
+    Option B (delivery emphasis): Led a distributed team of six engineers
+      through a full replatforming cycle while sustaining the regular
+      release cadence.
+- Owned the internal deployment toolchain adopted by four product teams,
+  taking releases from a manual checklist to a repeatable pipeline.
+- Ran the go/no-go decision for monthly releases, weighing test results,
+  open defects, and system health rather than deferring to a date.
+- Introduced a lightweight incident review format, which surfaced repeat
+  causes the team had previously been fixing one at a time.
+- (situational: only if the spec calls for cost or FinOps work) Reduced
+  non-production cloud spend by shutting down idle preview environments
+  automatically after 48 hours.
+
+===================================================================
+ROLE: Senior Software Engineer — Northwind Systems (2019 – 2022)
+===================================================================
+- Built the CI pipeline that replaced nightly manual builds, cutting the
+  feedback loop on a failing change from a day to under 20 minutes.
+- Designed and maintained the integration test suite covering the service
+  boundary between the API and the billing system.
+- Mentored two junior engineers through their first year, both of whom went
+  on to own services independently.
+
+===================================================================
+ROLE: Software Engineer — Castleford Digital (2016 – 2019)
+===================================================================
+- Delivered features across a customer-facing web application in a small
+  team with direct product owner contact.
+- Took on release coordination for the team, including writing the runbook
+  the team still used after departure.
+
+EDUCATION
+---------
+BSc Computer Science, State University (2016)
+
+CERTIFICATIONS
+--------------
+- Certified Scrum Master (CSM), Scrum Alliance (2021)
+- AWS Certified Solutions Architect, Associate (2020)
+
+RECOGNITION
+-----------
+- Engineering Excellence Award, Northwind Systems (2023), for the
+  deployment toolchain rollout.
